@@ -1,15 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
    private int _count = 0;
+    private int _mouseButtonNumber = 0;
     private bool _isCoroutineWork = false;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(_mouseButtonNumber))
         {
             if (_isCoroutineWork == false)
             {
@@ -19,7 +19,6 @@ public class Counter : MonoBehaviour
             else
             {
                 _isCoroutineWork = false;
-                StopCoroutine(NumberCounter());
             }
         }
     }
@@ -27,12 +26,13 @@ public class Counter : MonoBehaviour
     private IEnumerator NumberCounter() 
     {
         float delay = 0.5f;
+        var wait = new WaitForSeconds(delay);
 
         while (_isCoroutineWork)
         {
             _count++;
             Debug.Log(_count);
-            yield return new WaitForSeconds(delay);
+            yield return wait;
         }
     }   
 }
