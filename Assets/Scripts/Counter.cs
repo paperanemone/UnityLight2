@@ -4,8 +4,8 @@ using UnityEngine;
 public class Counter : MonoBehaviour
 {
    private int _count = 0;
-    private int _mouseButtonNumber = 0;
-    private bool _isCoroutineWork = false;
+   private int _mouseButtonNumber = 0;
+   private bool _isCoroutineWork = false;
 
     private void Update()
     {
