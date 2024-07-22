@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
-   private int _count = 0;
    private int _mouseButtonNumber = 0;
    private bool _isCoroutineWork = false;
+
+   public event Action CountChanged;
+
+   public int Count { get; private set; } = 0;
 
     private void Update()
     {
@@ -30,8 +34,8 @@ public class Counter : MonoBehaviour
 
         while (_isCoroutineWork)
         {
-            _count++;
-            Debug.Log(_count);
+            Count++;
+            CountChanged?.Invoke();
             yield return wait;
         }
     }   
