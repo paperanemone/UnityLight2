@@ -5,7 +5,6 @@ using UnityEngine;
 public class CubeManager : MonoBehaviour
 {
     [SerializeField] private GameObject _cubePrefab;
-
     [SerializeField] private Raycaster _raycaster;
 
     private int _separationChanceNumber = 1;
