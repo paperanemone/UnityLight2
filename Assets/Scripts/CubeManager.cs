@@ -6,7 +6,7 @@ public class CubeManager : MonoBehaviour
 {
     [SerializeField] private GameObject _cubePrefab;
 
-    private Raycaster _raycaster;
+    [SerializeField] private Raycaster _raycaster;
 
     private int _separationChanceNumber = 1;
     private int _minRandomCubeCount = 2;
