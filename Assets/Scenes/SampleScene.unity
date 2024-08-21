@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1859622699}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube
@@ -232,6 +236,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1859622699}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube (1)
@@ -560,7 +568,7 @@ GameObject:
   - component: {fileID: 1859622698}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -796,6 +804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1859622699}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube (2)
@@ -810,8 +822,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 950091395}
+  - {fileID: 1859622700}
   - {fileID: 1972042831}
   - {fileID: 238042061}
   - {fileID: 481388167}
   - {fileID: 1975876593}
-  - {fileID: 1859622700}

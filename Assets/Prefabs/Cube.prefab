@@ -120,6 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cubePrefab: {fileID: 5660347041724387205}
+  _camera: {fileID: 0}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!54 &-4076970400984007497
 Rigidbody:
   m_ObjectHideFlags: 0
