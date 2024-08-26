@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1859622699}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 406137071}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube
@@ -188,6 +192,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d28426b61b487be479a824f92245e840, type: 3}
+--- !u!1 &406137068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406137070}
+  - component: {fileID: 406137071}
+  m_Layer: 0
+  m_Name: Raycaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406137070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406137068}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.66373634, y: 2.0311403, z: 4.4432497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406137071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406137068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6879618307ba6469ee409d139190ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &481388167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,6 +291,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1859622699}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 406137071}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube (1)
@@ -808,6 +863,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1859622699}
+    - target: {fileID: 5415626306962634546, guid: d28426b61b487be479a824f92245e840, type: 3}
+      propertyPath: _raycaster
+      value: 
+      objectReference: {fileID: 406137071}
     - target: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
       propertyPath: m_Name
       value: Cube (2)
@@ -827,3 +886,4 @@ SceneRoots:
   - {fileID: 238042061}
   - {fileID: 481388167}
   - {fileID: 1975876593}
+  - {fileID: 406137070}

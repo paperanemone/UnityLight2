@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Raycaster : MonoBehaviour
@@ -8,11 +6,12 @@ public class Raycaster : MonoBehaviour
     [SerializeField] private LayerMask _layerMask;
 
     private Ray _ray;
-    public RaycastHit Hit { get; private set; }
 
     private int _mouseButtonNumber = 0;
 
     public event Action RaycastHitted;
+
+    public RaycastHit Hit { get; private set; }
 
     private void Update()
     {

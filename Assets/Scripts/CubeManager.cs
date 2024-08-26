@@ -42,24 +42,6 @@ public class CubeManager : MonoBehaviour
         }
     }
 
-   // private void OnMouseDown()
-   // {
-     //   int minRandomCubeCount = 2;
-       // int maxRandomCubeCount = 6;
-
-        //if (Random.Range(1, _separationChanceNumber + 1) == 1)
-        //{
-          //  int randomCubeCount = Random.Range(minRandomCubeCount, maxRandomCubeCount + 1);
-
-           // for (int i = 0; i < randomCubeCount; i++)
-            //{
-            //    CreateNewCube().GetComponent<Rigidbody>().AddExplosionForce(_explosionForce, transform.position, _explosionRadius);
-           // }
-       // }
-
-        //Destroy(gameObject);
-    //}
-
     private GameObject CreateNewCube()
     {
         GameObject newCube = Instantiate(_cubePrefab);
