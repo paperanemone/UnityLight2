@@ -4,25 +4,28 @@ using UnityEngine;
 public class Raycaster : MonoBehaviour
 {
     [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private CubeManager _cubeManager;
+
+    private Camera _camera;
 
     private Ray _ray;
 
     private int _mouseButtonNumber = 0;
 
-    public event Action RaycastHitted;
-
-    public RaycastHit Hit { get; private set; }
+    private void Start()
+    {
+        _camera = Camera.main;
+    }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(_mouseButtonNumber))
         {
-            _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            _ray = _camera.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(_ray, out RaycastHit hit, Mathf.Infinity, _layerMask.value))
             {
-                Hit = hit;
-                RaycastHitted?.Invoke();
+                _cubeManager.ExplodeCube(hit.collider.gameObject);
             }
         }
     }
