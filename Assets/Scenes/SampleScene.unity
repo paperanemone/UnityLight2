@@ -231,6 +231,7 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 8
+  _cubeManager: {fileID: 1041367804}
 --- !u!1001 &481388167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,8 +518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bef8e58450b85d48b214a80000650b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cubePrefab: {fileID: 5660347041724387205, guid: d28426b61b487be479a824f92245e840, type: 3}
-  _raycaster: {fileID: 406137071}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!4 &1041367805
 Transform:
   m_ObjectHideFlags: 0
